@@ -1,0 +1,36 @@
+name: moviestudio2
+version: 1
+cron:
+- description: moviestdio_HotestMovie
+  url: /updateHotestMovie
+  schedule: "0 20 * * *"
+
+  cron:
+- description: moviestdio_LatestMovie
+  url: /updateLatestMovie
+  schedule: "0 22 * * *"
+  
+  cron:
+- description: moviestdio_LatestMovieReview
+  url: /updateLatestMovieReview
+  schedule: "0 8 * * *"
+  
+  cron:
+- description: moviestdio_ComingMovie
+  url: /updateComingMovie
+  schedule: "0 10 * * *"
+  
+  cron:
+- description: moviestdio_BestMovieReview
+  url: /updateBestMovieReview
+  schedule: "0 12 * * *"
+  
+  cron:
+- description: moviestdio_cinema
+  url: /updateCinema
+  schedule: "0 14 * * *"
+  
+  cron:
+- description: moviestdio_BestMovie
+  url: /updateBestMovie
+  schedule: "0 16 * * *"
